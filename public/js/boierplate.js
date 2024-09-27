@@ -3,11 +3,11 @@
 let pathToIncludes = '';
 
 // If the current HTML file is inside 'views/pages/', go up two directories
-if (window.location.pathname.includes('/views/pages/')) {
-  pathToIncludes = '/views/includes/';
+if (window.location.pathname.includes('../../views/pages/')) {
+  pathToIncludes = '../../views/includes/';
 } else {
   // For files in the root or other locations, keep the default path
-  pathToIncludes = '/views/includes/';
+  pathToIncludes = '../../views/includes/';
 }
 
 // Load navbar
