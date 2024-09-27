@@ -1,13 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-  }
+
   
   .contact-section {
     padding: 50px 0;
@@ -102,7 +93,7 @@ iframe {
   }
 
   .contact-card {
-      width: 80%; /* 1 card per row */
+      width: 80%; 
       max-width: 100%;
   }
 }
