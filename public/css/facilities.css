@@ -1,0 +1,61 @@
+
+.facilities {
+    text-align: center;
+    padding: 30px 15px;
+}
+
+.facilities h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.facilities h2 span {
+    color: teal;
+}
+
+.facility-box {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.facility-box:hover {
+    transform: translateY(-10px);
+}
+
+.facility-box img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.facility-box h4 {
+    font-size: 1.25rem;
+    color:teal
+}
+
+.facility-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Always two columns */
+    gap: 20px;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+@media (max-width: 768px) {
+    .facility-grid {
+        grid-template-columns: repeat(2, 1fr); /* Still two columns on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .facility-grid {
+        grid-template-columns: repeat(1, 1fr); /* One column on very small screens */
+    }
+}

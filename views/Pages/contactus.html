@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/public/css/body.css">
+    <link rel="stylesheet" href="/public/css/services.css">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/public/css/contactus.css">
+    
+  <style>
+    #map {
+    height: 400px; /* Set a height for the map */
+    width: 100%; /* Ensure it takes the full width */
+}
+
+  </style>
+    <title>Contact Us</title>
+</head>
+<body>
+   
+     
+    
+    <div id="navbar"></div>
+    <section class="header">
+        <div class="header-background">
+            <div class="overlay">
+                <div class="title-box">
+                    <h1>Contact us</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+      <div class="contact-section">
+        <div class="contact-hero">
+            <h1>Get in Touch</h1>
+            <p>We’re here to answer your questions and help with your healthcare needs.</p>
+        </div>
+    
+        <div class="contact-info">
+            <div class="contact-card">
+                <i class="fa fa-map-marker"></i>
+                <h3>Address</h3>
+                <p>Defence City Society apposite taluka thana jarwari shakh,Mirpur Khas, Pakistan</p>
+            </div>
+            <div class="contact-card">
+                <i class="fa fa-phone"></i>
+                <h3>Phone</h3>
+                <p>0300 3379667</p>
+            </div>
+            <div class="contact-card">
+                <i class="fa fa-fax"></i>
+                <h3>Fax</h3>
+                <p>+92-21-99201287</p>
+            </div>
+            <div class="contact-card">
+                <i class="fa fa-envelope"></i>
+                <h3>Email</h3>
+                <p>info@mud.org</p>
+            </div>
+            <div class="contact-card">
+                <i class="fa fa-globe"></i>
+                <h3>Website</h3>
+                <p>mub.org</p>
+            </div>
+        </div>
+    
+        <div id="map" style="height: 400px;"></div> <!-- Ensure height is set here or in CSS -->
+    </div>
+    
+
+    
+    
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+    // Initialize the map and set the view to Defence City, Mirpurkhas
+    const map = L.map('map').setView([25.5202, 69.0134], 14); // lat, lng, zoom level
+
+    // Add OpenStreetMap tiles to the map
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Add a marker to Defence City, Mirpurkhas
+    const marker = L.marker([25.5202, 69.0134]).addTo(map)
+        .bindPopup("MUB Trust Hospital, Mirpurkhas")
+        .openPopup();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="footer"></div>
+
+
+    <script src="/public/js/boierplate.js"></script>
+<script src="/public/js/script.js"></script>    
+</body>
+</html>

@@ -1,0 +1,206 @@
+/* About Us Section */
+.about-section {
+    padding: 50px 0;
+    background: #f4f4f4;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h1 {
+    font-size: 36px;
+    color: #004D40;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: #004D40;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #00332d;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    max-width: 600px;
+    
+}
+
+/* Our Mission Section */
+.mission-section {
+    padding: 50px;
+    text-align: center;
+    background: #004D40;
+    color: white;
+}
+
+.mission-section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.mission-section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+ /* chairman  */
+ h2 {
+    color: teal;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+blockquote {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.chairman_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.text-section {
+    flex: 1 1 60%;
+    padding-right: 2rem;
+}
+
+.image-section {
+    flex: 1 1 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 15px;
+    object-fit: cover;
+    height: 500px;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.signature {
+    font-weight: bold;
+    text-align: right;
+    margin-top: 1rem;
+}
+
+  /* stats section   */
+  .stats-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Individual Card Styling */
+.stats-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    width: 350px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  
+}
+
+/* Icon Styling */
+.stats-icon {
+    color: teal;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Number and Label Styling */
+.stats-number {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.stats-label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: teal;
+}
+
+/* Hover Effect */
+.stats-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .chairman_container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .text-section {
+        padding-right: 0;
+    }
+
+    .image-section {
+        margin-top: 2rem;
+    }
+
+     /* stats section  */
+     .stats-section {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .stats-card {
+        margin-bottom: 2rem;
+    }
+}
